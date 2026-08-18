@@ -1,14 +1,11 @@
+````markdown
 # 🔎 TruthLens
-
 
 AI-powered fact verification agent built with **Python + Groq**.
 
-
 TruthLens takes a factual claim, analyzes it using an LLM, and returns a structured verdict with confidence, reasoning, and evidence.
 
-
 ## 🧠 Architecture
-
 
 ```text
 User Claim
@@ -20,12 +17,18 @@ Groq LLM
 Evidence Analysis
     ↓
 Verdict + Confidence
-🛠️ Tech Stack
-Python — Agent/controller
-Groq — AI reasoning
-Pydantic — Structured data validation
-python-dotenv — API key management
-📁 Structure
+````
+
+## 🛠️ Tech Stack
+
+* **Python** — Agent/controller
+* **Groq** — AI reasoning
+* **Pydantic** — Structured data validation
+* **python-dotenv** — API key management
+
+## 📁 Structure
+
+```text
 truthlens/
 ├── app.py
 ├── agent.py
@@ -36,52 +39,70 @@ truthlens/
 ├── requirements.txt
 └── tests/
     └── test_claims.py
-⚙️ Setup
+```
+
+## ⚙️ Setup
+
+```bash
 git clone https://github.com/YOUR_USERNAME/truthlens.git
 cd truthlens
 
-
 python -m venv .venv
+```
 
 Windows:
 
+```powershell
 .\.venv\Scripts\Activate.ps1
+```
 
 Install dependencies:
 
+```bash
 python -m pip install -r requirements.txt
+```
 
-Create .env:
+Create `.env`:
 
+```env
 GROQ_API_KEY=your_api_key
+```
 
 Run:
 
+```bash
 python app.py
-📊 Verdicts
+```
 
-TRUE · MOSTLY_TRUE · MISLEADING · MOSTLY_FALSE · FALSE · UNVERIFIABLE · OPINION
+## 📊 Verdicts
 
-🔬 Evaluation
+`TRUE` · `MOSTLY_TRUE` · `MISLEADING` · `MOSTLY_FALSE` · `FALSE` · `UNVERIFIABLE` · `OPINION`
+
+## 🔬 Evaluation
 
 Planned metrics:
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-Hallucination Rate
-Confidence Calibration
-🚧 Roadmap
- Groq-powered verification
- Structured outputs
- Confidence scoring
- Evidence handling
- Real-time web search
- Source reliability scoring
- Contradiction detection
- FastAPI backend
- Web UI
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+* Hallucination Rate
+* Confidence Calibration
 
-V1 is a prototype focused on understanding and building the core AI-agent architecture.
+## 🚧 Roadmap
+
+* [x] Groq-powered verification
+* [x] Structured outputs
+* [x] Confidence scoring
+* [x] Evidence handling
+* [ ] Real-time web search
+* [ ] Source reliability scoring
+* [ ] Contradiction detection
+* [ ] FastAPI backend
+* [ ] Web UI
+
+> **V1 is a prototype focused on understanding and building the core AI-agent architecture.**
+
+```
+```
