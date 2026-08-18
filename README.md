@@ -1,4 +1,4 @@
-````markdown
+
 # 🔎 TruthLens
 
 AI-powered fact verification agent built with **Python + Groq**.
@@ -17,7 +17,6 @@ Groq LLM
 Evidence Analysis
     ↓
 Verdict + Confidence
-````
 
 ## 🛠️ Tech Stack
 
