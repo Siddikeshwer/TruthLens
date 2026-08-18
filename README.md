@@ -103,5 +103,3 @@ Planned metrics:
 
 > **V1 is a prototype focused on understanding and building the core AI-agent architecture.**
 
-```
-```
